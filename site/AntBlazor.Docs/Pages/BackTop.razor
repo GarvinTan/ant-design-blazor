@@ -28,42 +28,66 @@
     </Demo>
 </DemoCard>
 <br />
+<DemoCard>
+    <Title>滚动容器</Title>
+    <Description>设置 nzTarget 参数，允许对某个容器返回顶部。</Description>
+    <Demo>
+        <style>
+            .long-div {
+                height: 300px;
+                overflow-y: scroll;
+                background-image: url(//zos.alipayobjects.com/rmsportal/RmjwQiJorKyobvI.jpg);
+            }
 
+            .long-div-inner {
+                height: 1500px;
+            }
+
+            .long-div .ant-back-top {
+                right: 150px;
+              }
+        </style>
+        <div class="long-div">
+            <div class="long-div-inner"></div>
+            <AntBackTop Title="Scroll down to see the bottom-right gray button."></AntBackTop>
+        </div>
+    </Demo>
+</DemoCard>
 <br />
 <h2>API</h2>
 <br />
 
 <table>
     <thead>
-    <tr>
-        <th>参数</th>
-        <th>说明</th>
-        <th>类型</th>
-        <th>默认值</th>
-        <th>版本</th>
-    </tr>
+        <tr>
+            <th>参数</th>
+            <th>说明</th>
+            <th>类型</th>
+            <th>默认值</th>
+            <th>版本</th>
+        </tr>
     </thead>
     <tbody>
-    <tr>
-        <td>target</td>
-        <td>设置需要监听其滚动事件的元素，值为一个返回对应 DOM 元素的函数</td>
-        <td>Function</td>
-        <td>() =&gt; window</td>
-        <td></td>
-     </tr>
-    <tr>
-        <td>visibilityHeight</td>
-        <td>滚动高度达到此参数值才出现 <code>BackTop</code></td>
-        <td>number</td>
-        <td>400</td>
-        <td></td>
+        <tr>
+            <td>target</td>
+            <td>设置需要监听其滚动事件的元素，值为一个返回对应 DOM 元素的函数</td>
+            <td>Function</td>
+            <td>() =&gt; window</td>
+            <td></td>
         </tr>
-    <tr>
-        <td>onClick</td>
-        <td>点击按钮的回调函数</td>
-        <td>Function</td>
-        <td>-</td>
-        <td></td>
-     </tr>
+        <tr>
+            <td>visibilityHeight</td>
+            <td>滚动高度达到此参数值才出现 <code>BackTop</code></td>
+            <td>number</td>
+            <td>400</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>onClick</td>
+            <td>点击按钮的回调函数</td>
+            <td>Function</td>
+            <td>-</td>
+            <td></td>
+        </tr>
     </tbody>
 </table>
